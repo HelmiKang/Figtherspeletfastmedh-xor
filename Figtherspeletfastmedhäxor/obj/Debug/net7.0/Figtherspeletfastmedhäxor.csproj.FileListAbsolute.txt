@@ -1,0 +1,14 @@
+C:\Users\helmi.kangasmaa\Desktop\prpr2\Figtherspeletfastmedhäxor\Figtherspeletfastmedhäxor\bin\Debug\net7.0\Figtherspeletfastmedhäxor.exe
+C:\Users\helmi.kangasmaa\Desktop\prpr2\Figtherspeletfastmedhäxor\Figtherspeletfastmedhäxor\bin\Debug\net7.0\Figtherspeletfastmedhäxor.deps.json
+C:\Users\helmi.kangasmaa\Desktop\prpr2\Figtherspeletfastmedhäxor\Figtherspeletfastmedhäxor\bin\Debug\net7.0\Figtherspeletfastmedhäxor.runtimeconfig.json
+C:\Users\helmi.kangasmaa\Desktop\prpr2\Figtherspeletfastmedhäxor\Figtherspeletfastmedhäxor\bin\Debug\net7.0\Figtherspeletfastmedhäxor.dll
+C:\Users\helmi.kangasmaa\Desktop\prpr2\Figtherspeletfastmedhäxor\Figtherspeletfastmedhäxor\bin\Debug\net7.0\Figtherspeletfastmedhäxor.pdb
+C:\Users\helmi.kangasmaa\Desktop\prpr2\Figtherspeletfastmedhäxor\Figtherspeletfastmedhäxor\obj\Debug\net7.0\Figtherspeletfastmedhäxor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\helmi.kangasmaa\Desktop\prpr2\Figtherspeletfastmedhäxor\Figtherspeletfastmedhäxor\obj\Debug\net7.0\Figtherspeletfastmedhäxor.AssemblyInfoInputs.cache
+C:\Users\helmi.kangasmaa\Desktop\prpr2\Figtherspeletfastmedhäxor\Figtherspeletfastmedhäxor\obj\Debug\net7.0\Figtherspeletfastmedhäxor.AssemblyInfo.cs
+C:\Users\helmi.kangasmaa\Desktop\prpr2\Figtherspeletfastmedhäxor\Figtherspeletfastmedhäxor\obj\Debug\net7.0\Figtherspeletfastmedhäxor.csproj.CoreCompileInputs.cache
+C:\Users\helmi.kangasmaa\Desktop\prpr2\Figtherspeletfastmedhäxor\Figtherspeletfastmedhäxor\obj\Debug\net7.0\Figtherspeletfastmedhäxor.dll
+C:\Users\helmi.kangasmaa\Desktop\prpr2\Figtherspeletfastmedhäxor\Figtherspeletfastmedhäxor\obj\Debug\net7.0\refint\Figtherspeletfastmedhäxor.dll
+C:\Users\helmi.kangasmaa\Desktop\prpr2\Figtherspeletfastmedhäxor\Figtherspeletfastmedhäxor\obj\Debug\net7.0\Figtherspeletfastmedhäxor.pdb
+C:\Users\helmi.kangasmaa\Desktop\prpr2\Figtherspeletfastmedhäxor\Figtherspeletfastmedhäxor\obj\Debug\net7.0\Figtherspeletfastmedhäxor.genruntimeconfig.cache
+C:\Users\helmi.kangasmaa\Desktop\prpr2\Figtherspeletfastmedhäxor\Figtherspeletfastmedhäxor\obj\Debug\net7.0\ref\Figtherspeletfastmedhäxor.dll
