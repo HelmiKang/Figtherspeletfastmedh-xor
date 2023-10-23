@@ -17,10 +17,14 @@ power =  choice;
 
 public void attack(Witch target)
 {
-    power.damageGenerator();
-    int damage = power.dmg;
-    target.hp -= damage;
-    Console.WriteLine($"{target.name} took {power.dmg} and now has {target.hp} hp.");
+    // power.damageGenerator();
+    // int damage = power.dmg;
+    // target.hp -= damage;
+    Console.WriteLine($"{name} attacked!");
+
+    int dmgDone = power.Attack(target);
+
+    Console.WriteLine($"{target.name} now has {target.hp} hp.");
 }
 
 }

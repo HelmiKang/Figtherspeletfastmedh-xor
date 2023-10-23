@@ -1,56 +1,61 @@
-﻿power Fire = new("fire", 10);
-power Ice = new("ice", 10);
+﻿
+//skapar saker
+power Ice = new Ice();
+power Fire = new Fire();
+
+Witch Witch1 = new("Helmi", 40, Ice);
+Witch Witch2 = new("Alva", 39, Fire);
 
 
-Witch Witch1 =  new ("Helmi", 40, Ice);
-Witch Witch2 =  new ("Alva", 39, Fire);
-
-
-//logiken
+//funktioner
 void Space()
 {
-Console.WriteLine(" ");
+    Console.WriteLine(" ");
 }
 
 void attackLoop(Witch attacker, Witch target)
 {
-Space();
-attacker.attack(target);
+    Space();
+    attacker.attack(target);
 }
 
 void Clear()
 {
-Space();
-Console.WriteLine("(press any key)");
-Console.ReadLine();
-Console.Clear();
+    Space();
+    Console.WriteLine("(press any key)");
+    Console.ReadLine();
+    Console.Clear();
 }
 
 //spelet
+//början
 Console.WriteLine($"{Witch1.name} has {Witch1.hp} hp and the power of {Witch1.power.name}.");
 Console.WriteLine($"{Witch2.name} has {Witch2.hp} hp and the power of {Witch2.power.name}.");
+Clear();
 
-while(Witch1.hp >
+//mitten
+while (Witch1.hp >
  0 && Witch2.hp > 0)
 {
-attackLoop(Witch1, Witch2);
-attackLoop(Witch2, Witch1);
-Clear();
+    attackLoop(Witch1, Witch2);
+    attackLoop(Witch2, Witch1);
+    Clear();
 }
 
+//slut
 Console.WriteLine("Nu är duellen slut!");
 
-if(Witch1.hp < 0 && Witch2.hp < 0)
+if (Witch1.hp < 0 && Witch2.hp < 0)
 {
-Console.WriteLine("oavgjort");
+    Console.WriteLine("oavgjort");
 }
-else if(Witch1.hp < 0)
+if (Witch1.hp < 0)
 {
-Console.WriteLine($"{Witch2.name} vann");
+    Console.WriteLine($"{Witch2.name} vann");
 }
-else if(Witch2.hp < 0)
+if (Witch2.hp < 0)
 {
-Console.WriteLine($"{Witch1.name} vann");
+    Console.WriteLine($"{Witch1.name} vann");
 }
 
 Console.ReadLine();
