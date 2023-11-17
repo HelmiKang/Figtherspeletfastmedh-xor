@@ -3,10 +3,10 @@
 public int dmgmax;
 public string name;
 
+public int dmg;
+
 
 protected List<SubPower> subPowers = new();
-
-public int dmg;
 
 // private Random generator = new();
 
