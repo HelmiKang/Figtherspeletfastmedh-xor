@@ -3,15 +3,14 @@ using System.Xml;
 
 public class Witch
 {
-public int hp;
+public int hp = 40;
 public string name;
 
 public power power;
 
-public Witch (string nameo, int hpo, power choice)
+public Witch (string nameo, power choice)
 {
 name = nameo;
-hp =  hpo;
 power =  choice;
 }
 
@@ -26,5 +25,5 @@ public void attack(Witch target)
 
     Console.WriteLine($"{target.name} now has {target.hp} hp.");
 }
-
 }
+

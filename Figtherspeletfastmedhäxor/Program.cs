@@ -1,11 +1,6 @@
 ﻿
 //skapar saker
-power Ice = new Ice();
-power Fire = new Fire();
-
-Witch Witch1 = new("Helmi", 40, Ice);
-Witch Witch2 = new("Alva", 39, Fire);
-
+using System.ComponentModel;
 
 //funktioner
 void Space()
@@ -26,6 +21,43 @@ void Clear()
     Console.ReadLine();
     Console.Clear();
 }
+
+ /*
+    1. läsa in ett namn
+    2. välja en kraft
+    2.1 Läsa in 1 eller 2 eller 3 eller 4
+    2.2 Om man valde 1, skapa instans av Ice
+        power = new Ice()
+    2.3 Om man valde 2, skapa instans av Fire
+        power = new Fire()
+    2.4 Skapa en instans av Witch, lägg till namn & kraft
+
+    */
+
+
+    Console.WriteLine("Player 1, choose the name of your witch:");
+    string witchName = Console.ReadLine();    
+
+    Space();
+
+    Console.WriteLine("Player 1, now you must choose the elemental power your witch will have..");
+    Console.WriteLine("1 : The power of water.");
+    Console.WriteLine("2 : The power of ice.");
+    Console.WriteLine("3 : The power of fire.");
+    Console.WriteLine("4 : The power of nature.");
+    string witchPower = Console.ReadLine();
+    Space();
+
+    if(witchPower == "2")
+    { 
+        power ice = new Ice();
+        Witch Witch1 = new(witchName, Ice);
+    }
+
+
+
+
+
 
 //spelet
 //början
