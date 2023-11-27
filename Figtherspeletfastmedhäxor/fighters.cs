@@ -10,10 +10,10 @@ public Power power;
 //_________________________________________________________________________________________________________________________________
 
 //skapa instans av witch
-public Witch (string nameo, Power choice)
+public Witch (string holderName, Power holderPower)
 {
-name = nameo;
-power =  choice;
+name = holderName;
+power =  holderPower;
 }
 //_________________________________________________________________________________________________________________________________
 

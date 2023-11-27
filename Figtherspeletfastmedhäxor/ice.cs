@@ -3,7 +3,7 @@ public class Ice : Power
 {
     public Ice()
     {
-        dmgmax = 10;
+        dmgMax = 10;
         name = "ice";
         dmg = 0;
 

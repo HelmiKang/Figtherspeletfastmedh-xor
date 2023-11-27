@@ -3,7 +3,7 @@ public class Fire : Power
 {
   public Fire()
   {
-    dmgmax = 10;
+    dmgMax = 10;
     name = "fire";
     dmg = 0;
 

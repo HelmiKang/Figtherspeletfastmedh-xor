@@ -3,7 +3,7 @@ public class Nature : Power
 {
     public Nature()
     {
-        dmgmax = 10;
+        dmgMax = 10;
         name = "ice";
         dmg = 0;
 

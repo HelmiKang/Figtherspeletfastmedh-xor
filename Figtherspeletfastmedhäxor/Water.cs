@@ -2,7 +2,7 @@
 {
   public Water()
   {
-    dmgmax = 10;
+    dmgMax = 10;
     name = "water";
     dmg = 0;
 

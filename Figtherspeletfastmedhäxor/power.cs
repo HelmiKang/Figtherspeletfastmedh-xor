@@ -1,15 +1,17 @@
 ﻿public class Power
 {
-public int dmgmax;
+
 public string name;
 
 public int dmg;
+
+protected int dmgMax;
 
 protected List<SubPower> subPowers = new();
 
 public void damageGenerator()
 {
-dmg = Random.Shared.Next(dmgmax);
+dmg = Random.Shared.Next(dmgMax);
 }
 //_________________________________________________________________________________________________________________________________
 
