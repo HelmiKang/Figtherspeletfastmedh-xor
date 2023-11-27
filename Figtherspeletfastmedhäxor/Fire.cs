@@ -1,5 +1,5 @@
 ﻿
-public class Fire : power
+public class Fire : Power
 {
   public Fire()
   {

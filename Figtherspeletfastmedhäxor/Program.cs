@@ -21,31 +21,19 @@ void Clear()
     Console.ReadLine();
     Console.Clear();
 }
+//_________________________________________________________________________________________________________________________________
 
-/*
-   1. läsa in ett namn
-   2. välja en kraft
-   2.1 Läsa in 1 eller 2 eller 3 eller 4
-   2.2 Om man valde 1, skapa instans av Ice
-       power = new Ice()
-   2.3 Om man valde 2, skapa instans av Fire
-       power = new Fire()
-   2.4 Skapa en instans av Witch, lägg till namn & kraft
-
-   */
-
-// ___________________________________________________________________________________
-// create witch 1
+// skapa witch 1
 Console.WriteLine("Player 1, choose the name of your witch:");
 string witchName = Console.ReadLine();
 
 Space();
 
-Witch Witch1 = new("", new power());
-bool @continue = true;
+Witch Witch1 = new("", new Power());
+bool rightInput = true;
 string witchPower = "";
 
-while (@continue == true)
+while (rightInput == true)
 {   
     Console.WriteLine("Player 1, now you must choose the elemental power your witch will have..");
     Console.WriteLine("1 : The power of water.");
@@ -55,27 +43,28 @@ while (@continue == true)
     witchPower = Console.ReadLine();
     Space();
 
+    // skapar instans av vald power, skapar instans av witch med namn och power
     if (witchPower == "1")
     {
-        power water = new Water();
+        Power water = new Water();
         Witch1 = new(witchName, water);
         break;
     }
     if (witchPower == "2")
     {
-        power ice = new Ice();
+        Power ice = new Ice();
         Witch1 = new(witchName, ice);
         break;
     }
     if (witchPower == "3")
     {
-        power fire = new Fire();
+        Power fire = new Fire();
         Witch1 = new(witchName, fire);
         break;
     }
     if (witchPower == "4")
     {
-        power nature = new Nature();
+        Power nature = new Nature();
         Witch1 = new(witchName, nature);
         break;
     }
@@ -86,18 +75,18 @@ while (@continue == true)
     }
 }
 Clear();
+//_________________________________________________________________________________________________________________________________
 
-//___________________________________________________________________________________
 // create witch 2
 Console.WriteLine("Player 2, choose the name of your witch:");
 witchName = Console.ReadLine();
 
 Space();
 
-Witch Witch2 = new("", new power());
-@continue = true;
+Witch Witch2 = new("", new Power());
+rightInput = true;
 
-while (@continue == true)
+while (rightInput == true)
 {   
     Console.WriteLine("Player 2, now you must choose the elemental power your witch will have..");
     Console.WriteLine("1 : The power of water.");
@@ -106,28 +95,29 @@ while (@continue == true)
     Console.WriteLine("4 : The power of nature.");
     witchPower = Console.ReadLine();
     Space();
-
+    
+    // skapar instans av vald power, skapar instans av witch med namn och power
     if (witchPower == "1")
     {
-        power water = new Water();
+        Power water = new Water();
         Witch2 = new(witchName, water);
         break;
     }
     if (witchPower == "2")
     {
-        power ice = new Ice();
+        Power ice = new Ice();
         Witch2 = new(witchName, ice);
         break;
     }
     if (witchPower == "3")
     {
-        power fire = new Fire();
+        Power fire = new Fire();
         Witch2 = new(witchName, fire);
         break;
     }
     if (witchPower == "4")
     {
-        power nature = new Nature();
+        Power nature = new Nature();
         Witch2 = new(witchName, nature);
         break;
     }
@@ -143,12 +133,12 @@ Clear();
 
 
 //spelet
-//början
 Console.WriteLine($"{Witch1.name} has {Witch1.hp} hp and the power of {Witch1.power.name}.");
 Console.WriteLine($"{Witch2.name} has {Witch2.hp} hp and the power of {Witch2.power.name}.");
 Clear();
+//_________________________________________________________________________________________________________________________________
 
-//mitten
+//attackerar tills någon dör
 while (Witch1.hp >
  0 && Witch2.hp > 0)
 {
@@ -156,6 +146,7 @@ while (Witch1.hp >
     attackLoop(Witch2, Witch1);
     Clear();
 }
+//_________________________________________________________________________________________________________________________________
 
 //slut
 Console.WriteLine("Nu är duellen slut!");

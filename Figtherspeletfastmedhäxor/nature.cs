@@ -1,5 +1,5 @@
 ﻿
-public class Nature : power
+public class Nature : Power
 {
     public Nature()
     {

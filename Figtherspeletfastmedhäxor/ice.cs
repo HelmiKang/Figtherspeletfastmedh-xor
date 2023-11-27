@@ -1,5 +1,5 @@
 ﻿
-public class Ice : power
+public class Ice : Power
 {
     public Ice()
     {

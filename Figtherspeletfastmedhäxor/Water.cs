@@ -1,4 +1,4 @@
-﻿public class Water : power
+﻿public class Water : Power
 {
   public Water()
   {
