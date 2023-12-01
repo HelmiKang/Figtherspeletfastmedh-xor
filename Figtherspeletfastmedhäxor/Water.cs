@@ -1,13 +1,12 @@
-﻿public class Water : Power
+﻿public class CreateWater : Power
 {
-  public Water()
+  public CreateWater()
   {
-    dmgMax = 10;
-    name = "water";
-    dmg = 0;
+    Name = "water";
+    Dmg = 0;
 
-    subPowers.Add(new SubPower() { name = "watter bubble", maxDmg = 5 });
-    subPowers.Add(new SubPower() { name = "pouring rain", maxDmg = 10 });
-    subPowers.Add(new SubPower() { name = "explosive geyser", maxDmg = 20 });
+    SubPowersList.Add(new SubPower() { Name = "watter bubble", Maxdmg = 5 });
+    SubPowersList.Add(new SubPower() { Name = "pouring rain", Maxdmg = 10 });
+    SubPowersList.Add(new SubPower() { Name = "explosive geyser", Maxdmg = 20 });
   }
 }

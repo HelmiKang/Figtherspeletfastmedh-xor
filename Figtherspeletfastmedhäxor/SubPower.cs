@@ -1,5 +1,5 @@
 ﻿public class SubPower
 {
-    public string name;
-    public int maxDmg;
+    public string Name;
+    public int Maxdmg;
 }

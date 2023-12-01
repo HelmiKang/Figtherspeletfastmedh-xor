@@ -1,37 +1,37 @@
 ﻿
 using System.Xml;
 
-public class Witch
+public class CreateWitch
 {
-public int hp = 40;
-public string name;
+public int Hp = 40;
+public string Name;
 
-public Power power;
+public Power WitchPower;
 //_________________________________________________________________________________________________________________________________
 
 //skapa instans av witch
-public Witch (string holderName, Power holderPower)
+public CreateWitch (string holderName, Power holderPower)
 {
-name = holderName;
-power =  holderPower;
+Name = holderName;
+WitchPower =  holderPower;
 }
 //_________________________________________________________________________________________________________________________________
 
-// attackera en target
-public void attack(Witch target)
+// attackera en target, ser till att hp inte går under 0
+public void Attack(CreateWitch target)
 {
     // power.damageGenerator();
     // int damage = power.dmg;
     // target.hp -= damage;
-    Console.WriteLine($"{name} attacked!");
+    Console.WriteLine($"{Name} attacked!");
 
-    int dmgDone = power.Attack(target);
-    if (target.hp < 0)
+    int dmgDone = WitchPower.GenerateDmg(target);
+    if (target.Hp < 0)
     {
-        target.hp = 0;
+        target.Hp = 0;
     }
 
-    Console.WriteLine($"{target.name} now has {target.hp} hp.");
+    Console.WriteLine($"{target.Name} now has {target.Hp} hp.");
 }
 }
 

@@ -1,15 +1,14 @@
 ﻿
-public class Ice : Power
+public class CreateIce : Power
 {
-    public Ice()
+    public CreateIce()
     {
-        dmgMax = 10;
-        name = "ice";
-        dmg = 0;
+        Name = "ice";
+        Dmg = 0;
 
-        subPowers.Add(new SubPower() {name = "ray of frost", maxDmg = 5});
-        subPowers.Add(new SubPower() {name = "ice dagger", maxDmg = 10});
-        subPowers.Add(new SubPower() {name = "cone of cold", maxDmg = 20});
+        SubPowersList.Add(new SubPower() {Name = "ray of frost", Maxdmg = 5});
+        SubPowersList.Add(new SubPower() {Name = "ice dagger", Maxdmg = 10});
+        SubPowersList.Add(new SubPower() {Name = "cone of cold", Maxdmg = 20});
 
     }
 }

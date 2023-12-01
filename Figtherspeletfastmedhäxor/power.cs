@@ -1,34 +1,28 @@
 ﻿public class Power
 {
 
-public string name;
+public string Name;
 
-public int dmg;
+public int Dmg;
 
-protected int dmgMax;
+protected List<SubPower> SubPowersList = new();
 
-protected List<SubPower> subPowers = new();
-
-public void damageGenerator()
-{
-dmg = Random.Shared.Next(dmgMax);
-}
 //_________________________________________________________________________________________________________________________________
 
 
 //generera en damage
-public int Attack(Witch target)
+public int GenerateDmg(CreateWitch target)
 {
     //välj en random attack
-    int i = Random.Shared.Next(subPowers.Count);
-    SubPower power = subPowers[i];
+    int i = Random.Shared.Next(SubPowersList.Count);
+    SubPower WitchPower = SubPowersList[i];
     //generera en random damage inom scopet för vald attack
-    int dmg = Random.Shared.Next(power.maxDmg);
-    Console.WriteLine($"Did {dmg} damage with {power.name} on {target.name}");
+    int Dmg = Random.Shared.Next(WitchPower.Maxdmg);
+    Console.WriteLine($"Did {Dmg} damage with {WitchPower.Name} on {target.Name}");
     
-    target.hp -= dmg;
+    target.Hp -= Dmg;
 
-    return dmg;
+    return Dmg;
     
 }
 

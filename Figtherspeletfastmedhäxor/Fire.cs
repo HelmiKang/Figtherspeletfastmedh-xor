@@ -1,14 +1,13 @@
 ﻿
-public class Fire : Power
+public class CreateFire : Power
 {
-  public Fire()
+  public CreateFire()
   {
-    dmgMax = 10;
-    name = "fire";
-    dmg = 0;
+    Name = "fire";
+    Dmg = 0;
 
-    subPowers.Add(new SubPower() { name = "fire bolt", maxDmg = 5 });
-    subPowers.Add(new SubPower() { name = "burning hands", maxDmg = 10 });
-    subPowers.Add(new SubPower() { name = "fireball", maxDmg = 20 });
+    SubPowersList.Add(new SubPower() { Name = "fire bolt", Maxdmg = 5 });
+    SubPowersList.Add(new SubPower() { Name = "burning hands", Maxdmg = 10 });
+    SubPowersList.Add(new SubPower() { Name = "fireball", Maxdmg = 20 });
   }
 }
