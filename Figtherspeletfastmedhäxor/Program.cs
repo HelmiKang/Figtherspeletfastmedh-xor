@@ -45,41 +45,50 @@ while (rightInput == true)
     Console.WriteLine("2 : The power of ice.");
     Console.WriteLine("3 : The power of fire.");
     Console.WriteLine("4 : The power of nature.");
-    witchPower = Console.ReadLine();
     Space();
 
     // skapar instans av vald power, skapar instans av witch med namn och power
-    if (witchPower == "1")
-    {
+    // testar om input är en int
+    try {
+    int n = int.Parse(Console.ReadLine());
+    if (n == 1)
+    {   
         Power water = new CreateWater();
         Witch1 = new(witchName, water);
         break;
     }
-    if (witchPower == "2")
+    if (n == 2)
     {
         Power ice = new CreateIce();
         Witch1 = new(witchName, ice);
         break;
     }
-    if (witchPower == "3")
+    if (n == 3)
     {
         Power fire = new CreateFire();
         Witch1 = new(witchName, fire);
         break;
     }
-    if (witchPower == "4")
+    if (n == 4)
     {
         Power nature = new CreateNature();
         Witch1 = new(witchName, nature);
         break;
     }
-    // om fel input så får man testa igen
     else
     {
         Console.WriteLine("Invalid input.");
         Space();
     }
+    }
+    // om fel input så får man testa igen
+    catch
+    {
+        Console.WriteLine("Invalid input.");
+        Space();
+    }
 }
+Console.WriteLine($"you have chosen the power of {Witch1.WitchPower.Name}");
 Clear();
 //_________________________________________________________________________________________________________________________________
 
@@ -100,41 +109,50 @@ while (rightInput == true)
     Console.WriteLine("2 : The power of ice.");
     Console.WriteLine("3 : The power of fire.");
     Console.WriteLine("4 : The power of nature.");
-    witchPower = Console.ReadLine();
     Space();
     
     // skapar instans av vald power, skapar instans av witch med namn och power
-    if (witchPower == "1")
-    {
+    // testar om input är en int
+    try {
+    int n = int.Parse(Console.ReadLine());
+    if (n == 1)
+    {   
         Power water = new CreateWater();
         Witch2 = new(witchName, water);
         break;
     }
-    if (witchPower == "2")
+    if (n == 2)
     {
         Power ice = new CreateIce();
         Witch2 = new(witchName, ice);
         break;
     }
-    if (witchPower == "3")
+    if (n == 3)
     {
         Power fire = new CreateFire();
         Witch2 = new(witchName, fire);
         break;
     }
-    if (witchPower == "4")
+    if (n == 4)
     {
         Power nature = new CreateNature();
         Witch2 = new(witchName, nature);
         break;
     }
-    // om fel input så får man testa igen
     else
     {
-        Console.WriteLine("Invalid input. Type 1, 2, 3 or 4.");
+        Console.WriteLine("Invalid input.");
+        Space();
+    }
+    }
+    // om fel input så får man testa igen
+    catch
+    {
+        Console.WriteLine("Invalid input.");
         Space();
     }
 }
+Console.WriteLine($"you have chosen the power of {Witch2.WitchPower.Name}");
 Clear();
 //___________________________________________________________________________________
 
