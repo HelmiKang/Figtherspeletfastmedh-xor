@@ -175,15 +175,15 @@ while (Witch1.Hp >
 //Spelet är slut och säger vem som vann peroende på hp
 Console.WriteLine("Nu är duellen slut!");
 
-if (Witch1.Hp < 0 && Witch2.Hp < 0)
+if (Witch1.Hp < 1 && Witch2.Hp < 1)
 {
     Console.WriteLine("oavgjort");
 }
-if (Witch1.Hp < 0)
+if (Witch1.Hp < 1)
 {
     Console.WriteLine($"{Witch2.Name} vann");
 }
-if (Witch2.Hp < 0)
+if (Witch2.Hp < 1)
 {
     Console.WriteLine($"{Witch1.Name} vann");
 }
