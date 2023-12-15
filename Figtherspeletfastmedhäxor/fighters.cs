@@ -1,7 +1,7 @@
 ﻿
 using System.Xml;
 
-public class CreateWitch
+public class Witch
 {
 public int Hp = 40;
 public string Name;
@@ -10,7 +10,7 @@ public Power WitchPower;
 //_________________________________________________________________________________________________________________________________
 
 //skapa instans av witch
-public CreateWitch (string holderName, Power holderPower)
+public Witch (string holderName, Power holderPower)
 {
 Name = holderName;
 WitchPower =  holderPower;
@@ -18,7 +18,7 @@ WitchPower =  holderPower;
 //_________________________________________________________________________________________________________________________________
 
 // attackera en target, ser till att hp inte går under 0
-public void Attack(CreateWitch target)
+public void Attack(Witch target)
 {
     // power.damageGenerator();
     // int damage = power.dmg;

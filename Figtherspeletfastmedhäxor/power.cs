@@ -11,7 +11,7 @@ protected List<SubPower> SubPowersList = new();
 
 
 //generera en damage
-public int GenerateDmg(CreateWitch target)
+public int GenerateDmg(Witch target)
 {
     //välj en random attack
     int i = Random.Shared.Next(SubPowersList.Count);

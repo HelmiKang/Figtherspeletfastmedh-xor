@@ -11,7 +11,7 @@ void Space()
 }
 
 // metod används för att attackera
-void AttackLoop(CreateWitch attacker, CreateWitch target)
+void AttackLoop(Witch attacker, Witch target)
 {
     Space();
     attacker.Attack(target);
@@ -34,7 +34,7 @@ string witchName = Console.ReadLine();
 
 Space();
 
-CreateWitch Witch1 = new("", new Power());
+Witch Witch1 = new("", new Power());
 bool rightInput = true;
 string witchPower = "";
 
@@ -99,7 +99,7 @@ witchName = Console.ReadLine();
 
 Space();
 
-CreateWitch Witch2 = new("", new Power());
+Witch Witch2 = new("", new Power());
 rightInput = true;
 
 while (rightInput == true)
